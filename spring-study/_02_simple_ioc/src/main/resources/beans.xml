@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans>
+    <bean class="com.sean.dao.impl.UserDaoImpl2" id="userDao"> </bean>
+</beans>

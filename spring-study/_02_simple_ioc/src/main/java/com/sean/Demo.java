@@ -12,7 +12,7 @@ public class Demo {
     public static void main(String[] args) {
         ClassPathXmlApplicationContext classPathXmlApplicationContext = new ClassPathXmlApplicationContext("beans.xml");
         UserDao userDao = (UserDao) classPathXmlApplicationContext.getBean("userDao");
-        System.out.println(userDao);
+        System.out.println(userDao.getUserById(1));
 
     }
 }

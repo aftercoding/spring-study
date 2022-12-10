@@ -1,5 +1,7 @@
 package com.sean.dao;
 
+import com.sean.domain.User;
+
 /**
  * @description: some desc
  * @author: congjun
@@ -8,4 +10,5 @@ package com.sean.dao;
  */
 public interface UserDao {
     public String getUserNameById(Integer id);
+    public User getUserById(Integer id);
 }

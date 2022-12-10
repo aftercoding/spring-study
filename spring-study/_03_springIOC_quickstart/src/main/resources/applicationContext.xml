@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+        <bean class="com.sean.dao.impl.StudentDaoImpl" id="studentDao" scope="singleton"></bean>
+<!--        <bean class="com.sean.dao.impl.StudentDaoImpl" id="studentDao" scope="prototype"></bean>-->
+        <bean class="com.sean.domain.Student" id="student">
+                <property name="name" value="xibeilang" ></property>
+                <property name="id" value="1"></property>
+                <property name="age" value="19" ></property>
+        </bean>
+        <bean class="com.sean.domain.Student" id="student2" >
+                <constructor-arg name="name" value="nanan"></constructor-arg>
+                <constructor-arg name="age" value="66"></constructor-arg>
+                <constructor-arg name="id" value="12"></constructor-arg>
+        </bean>
+</beans>

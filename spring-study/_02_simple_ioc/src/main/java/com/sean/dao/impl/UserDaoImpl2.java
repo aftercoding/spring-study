@@ -1,6 +1,7 @@
 package com.sean.dao.impl;
 
 import com.sean.dao.UserDao;
+import com.sean.domain.User;
 
 /**
  * @description: some desc
@@ -11,7 +12,10 @@ import com.sean.dao.UserDao;
 public class UserDaoImpl2 implements UserDao {
     @Override
     public String getUserNameById(Integer id) {
-        return "xishi2";
+        return "lisi1";
+    }
+    public User getUserById(Integer id) {
+        return new User(1, "beijing2", 26);
     }
 
     @Override

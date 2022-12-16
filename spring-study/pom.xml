@@ -13,6 +13,7 @@
     <module>_02_simple_ioc</module>
       <module>_03_springIOC_quickstart</module>
       <module>_04_spring_DI</module>
+    <module>_05_spring_annotation</module>
   </modules>
 
   <name>spring-study</name>
